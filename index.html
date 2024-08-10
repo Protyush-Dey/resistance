@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measure Your Resistance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nanum+Gothic&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div  class="container">
+        <h1>Measure the Resistance </h1>
+        <div class="data">
+            <select name="How many colors" class= "selector" id="color-number"  onchange="updateColorSelectors()">
+                <option value="" disabled selected>How many colors</option>
+                <option  value="4">4</option>
+                <option  value="5">5</option>
+            </select>
+
+            <select name="1st-color" class= "selector" id="1st-color">
+                <option value="" disabled selected>First color</option>
+                <option value="Black">Black</option>
+                <option value="Brown">Brown</option>
+                <option value="Red">Red</option>
+                <option value="Orange">Orange</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="Violet">Violet</option>
+                <option value="Grey">Grey</option>
+                <option value="White">White</option>
+            </select>
+ 
+            <select name="2nd-color" class= "selector" id="2nd-color">
+                <option value="" disabled selected>Second color</option>
+                <option value="Black">Black</option>
+                <option value="Brown">Brown</option>
+                <option value="Red">Red</option>
+                <option value="Orange">Orange</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="Violet">Violet</option>
+                <option value="Grey">Grey</option>
+                <option value="White">White</option>
+            </select>
+ 
+            <select name="3rd-color" class= "selector" id="3rd-color">
+                <option value="Black">Black</option>
+                <option value="Brown">Brown</option>
+                <option value="Red">Red</option>
+                <option value="Orange">Orange</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="Violet">Violet</option>
+                <option value="Grey">Grey</option>
+                <option value="White">White</option>
+            </select>
+ 
+            <select name="4th-color"  class= "selector" id="4th-color" style="display: none;">
+                <option value="Black">Black</option>
+                <option value="Brown">Brown</option>
+                <option value="Red">Red</option>
+                <option value="Orange">Orange</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="Violet">Violet</option>
+                <option value="Grey">Grey</option>
+                <option value="White">White</option>
+            </select>
+        
+
+            <select name="tolarance" class= "selector" id="tolarence">
+                <option value="" disabled selected>Tolerance</option>
+                <option value="Brown">Brown</option>
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="Violet">Violet</option>
+                <option value="Grey">Grey</option>
+                <option value="Gold">Gold</option>
+                <option value="Silver">Silver</option>
+                <option value="No color">No color</option>
+            </select>
+            <div class="result">
+            <input  type="text" placeholder="Result" id="result">
+            <button onclick="calculate()">Mesure</button>
+        </div>
+        </div>
+    </div>
+<script  src="script.js"></script>
+</body>
+</html>
